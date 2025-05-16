@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Dr. Carola J. Salas – Generative AI for Work &amp; Research Portfolio</title>
+  <title>Dr. Carola J. Salas – Generative AI for Work &amp; Research Portfolio</title>
   <style>
     :root {
       --primary: #0d6efd;
-      --accent: #28a745; /* green accent */
-      --bg: #f9f9fb;
+      --accent: #d63384;
+      --bg: #e9f5ff; /* light blue background */
+      --card: #f5f7fa; /* light gray for module boxes */
       --text: #222;
     }
     * {
@@ -17,15 +18,22 @@
       padding: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     }
-    /* Serif headings */
     h1, h2, h3 {
       font-family: Georgia, "Times New Roman", serif;
     }
+    /* Increase base text size */
     body {
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
+      font-size: 1.06rem; /* ~17px */
     }
+    /* Larger paragraph & list text for readability */
+    section p,
+    section li {
+      font-size: 1.15rem; /* ~18.5px */
+    }
+
     header {
       background: linear-gradient(135deg, var(--primary), var(--accent));
       color: #fff;
@@ -43,18 +51,18 @@
       margin-bottom: 1rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       opacity: 0.9;
     }
     nav {
       position: sticky;
       top: 0;
       background: #fff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       z-index: 10;
     }
     nav ul {
@@ -71,15 +79,16 @@
       transition: 0.2s;
     }
     nav a:hover {
-      color: var(--primary);
+      color: var(--accent);
     }
+
     section {
       padding: 3rem 1rem;
       max-width: 900px;
       margin: auto;
     }
     section h2 {
-      font-size: 2rem;
+      font-size: 2.25rem;
       margin-bottom: 1rem;
       color: var(--primary);
     }
@@ -88,43 +97,40 @@
       padding-left: 1.5rem;
       margin-top: 0.5rem;
     }
-    section li {
-      margin-bottom: 0.5rem;
-    }
     .module-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
     .module {
-      background: #fff;
+      background: var(--card);
       border-radius: 0.5rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      padding: 1.25rem;
     }
     .module h3 {
       margin-bottom: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: var(--accent);
     }
-    @media (max-width: 700px) {
-      .module-grid {
-        grid-template-columns: 1fr;
-      }
+
+    @media (max-width:700px){
+      .module-grid { grid-template-columns:1fr; }
     }
+
     footer {
-      background: #222;
-      color: #ddd;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.875rem;
+      background:#111827;
+      color:#ddd;
+      text-align:center;
+      padding:1rem;
+      font-size:1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img class="avatar" src="https://raw.githubusercontent.com/caro-salas/graph-ai-portfolio/main/CAROLA%206.jpg" alt="Janette Salas avatar">
-    <h1>Janette Salas</h1>
+    <img class="avatar" src="https://raw.githubusercontent.com/caro-salas/graph-ai-portfolio/main/CAROLA%206.jpg" alt="Dr. Carola J. Salas avatar">
+    <h1>Dr. Carola J. Salas</h1>
     <p>Medical Research Technologist | Generative AI Enthusiast</p>
   </header>
 
@@ -146,46 +152,25 @@
 
     <section id="course">
       <h2>Generative AI for Work &amp; Research Productivity</h2>
-      <p>This 8-week live online certification shows researchers and health-science professionals how no-code AI tools can automate tedious processes and supercharge productivity.</p>
+      <p>This 8-week live online certification shows researchers and health‑science professionals how no‑code AI tools can automate tedious processes and supercharge productivity.</p>
       <ul>
         <li>Automate documents, spreadsheets, and data workflows</li>
         <li>Organize knowledge and accelerate literature reviews</li>
         <li>Build custom chatbots for projects and teams</li>
         <li>Create compelling visuals and presentations with AI</li>
         <li>Design a capstone AI solution and showcase your results</li>
-        <li>Get hands-on support in workshops, help sessions, and forums</li>
+        <li>Get hands‑on support in workshops, help sessions, and forums</li>
       </ul>
 
       <h3 style="margin-top:2rem;color:var(--accent);">Course Modules</h3>
       <div class="module-grid">
-        <div class="module">
-          <h3>Documents, Presentations &amp; Websites</h3>
-          <p>LLM fundamentals, content generation, Markdown, no-code web builds.</p>
-        </div>
-        <div class="module">
-          <h3>Automated Data Analysis</h3>
-          <p>ChatGPT Code Interpreter, Julius, Windsurf, data visualization &amp; reports.</p>
-        </div>
-        <div class="module">
-          <h3>GenAI for Research &amp; Text Analysis</h3>
-          <p>Elicit, LiteRev, summarization, classification, knowledge extraction.</p>
-        </div>
-        <div class="module">
-          <h3>Custom GPTs and Chatbots</h3>
-          <p>RAG systems, Custom GPT Builder, Botpress workflows, API integration.</p>
-        </div>
-        <div class="module">
-          <h3>AI Workflows for Task Automation</h3>
-          <p>Lindy, Make.com, GSheets integration, Gmail API, task orchestration.</p>
-        </div>
-        <div class="module">
-          <h3>GenAI for Communication &amp; Outreach</h3>
-          <p>Ideogram, Lindy marketing flows, InVideo AI, lead enrichment.</p>
-        </div>
-        <div class="module">
-          <h3>Capstone Project &amp; Showcase</h3>
-          <p>Project scoping, integration, presentation and peer feedback.</p>
-        </div>
+        <div class="module"><h3>Documents, Presentations &amp; Websites</h3><p>LLM fundamentals, content generation, Markdown, no‑code web builds.</p></div>
+        <div class="module"><h3>Automated Data Analysis</h3><p>ChatGPT Code Interpreter, Julius, Windsurf, data visualization &amp; reports.</p></div>
+        <div class="module"><h3>GenAI for Research &amp; Text Analysis</h3><p>Elicit, LiteRev, summarization, classification, knowledge extraction.</p></div>
+        <div class="module"><h3>Custom GPTs and Chatbots</h3><p>RAG systems, Custom GPT Builder, Botpress workflows, API integration.</p></div>
+        <div class="module"><h3>AI Workflows for Task Automation</h3><p>Lindy, Make.com, GSheets integration, Gmail API, task orchestration.</p></div>
+        <div class="module"><h3>GenAI for Communication &amp; Outreach</h3><p>Ideogram, Lindy marketing flows, InVideo AI, lead enrichment.</p></div>
+        <div class="module"><h3>Capstone Project &amp; Showcase</h3><p>Project scoping, integration, presentation and peer feedback.</p></div>
       </div>
     </section>
 
@@ -198,16 +183,7 @@
         <li>Week 3: <a href="#">Coming soon</a></li>
         <li>Week 4: <a href="#">Coming soon</a></li>
         <li>Week 5: <a href="#">Coming soon</a></li>
-        <li>Week 6: <a href="#">Coming soon</a></li>
-        <li>Week 7: <a href="#">Coming soon</a></li>
-        <li>Week 8: <a href="#">Coming soon</a></li>
-      </ul>
-    </section>
-  </main>
+        <li>Week 6: <a href="#">Coming soon</
 
-  <footer>
-    &copy; 2025 Dr Carola J. Salas – All rights reserved.
-  </footer>
-</body>
 </html>
 
